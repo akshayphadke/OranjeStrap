@@ -8,6 +8,7 @@
 
 p {
   margin: 0 0 (@line-height-computed / 2);
+  line-height: 1.625;
 }
 .lead {
   margin-bottom: @line-height-computed;
@@ -49,7 +50,7 @@ cite    { font-style: normal; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: @headings-font-family;
+  font-family: @font-family-headers-sans-serif;
   font-weight: @headings-font-weight;
   line-height: @headings-line-height;
   small {
@@ -72,7 +73,7 @@ h6 {
   margin-bottom: (@line-height-computed / 2);
 }
 
-h1, .h1 { font-size: floor(@font-size-base * 2.60); } // ~36px
+h1, .h1 { font-size: floor(@font-size-base * 1.80); } // ~36px
 h2, .h2 { font-size: floor(@font-size-base * 2.15); } // ~30px
 h3, .h3 { font-size: ceil(@font-size-base * 1.70); } // ~24px
 h4, .h4 { font-size: ceil(@font-size-base * 1.25); } // ~18px

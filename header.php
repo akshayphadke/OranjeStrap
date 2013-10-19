@@ -23,12 +23,17 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
+
+	<div class="container">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+	</div>
+
 	<!-- Navigation bar -->
     <div class="navbar navbar-default navbar-static-top">
         <div class="container">
-	        <div class="navbar-header">
+	        <!-- <div class="navbar-header">
 	          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-	        </div>
+	        </div> -->
 	        <div class="navbar-collapse collapse">
 				<?php 
 					wp_nav_menu( array( 
