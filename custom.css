@@ -1,0 +1,23 @@
+/* Override bootstrap css styles */
+code {
+	white-space: normal;
+}
+
+.col-lg-8 {
+	padding-right: 30px;
+	border-right: 1px solid #DDDDDB;
+}
+
+/* Override wp css styles */
+.post {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #CCC;
+}
+
+h1.entry-title {
+	margin-top: 10px;
+}
+
+.widget_search {
+	margin-top: 10px;
+}

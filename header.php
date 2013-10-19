@@ -18,6 +18,7 @@
 <?php wp_head(); ?>
 
 <link rel="stylesheet" id="apt-style-css" href="http://127.0.0.1:8080/wordpress/wp-content/themes/OranjeStrap/libs/bootstrap/css/bootstrap.css?ver=3.0" type="text/css" media="all">
+<link rel="stylesheet" id="apt-style-css" href="http://127.0.0.1:8080/wordpress/wp-content/themes/OranjeStrap/custom.css?ver=1.0" type="text/css" media="all">
 </head>
 
 <body <?php body_class(); ?>>
@@ -42,7 +43,7 @@
       	</div>
     </div>
     <!-- End Navigation -->
-
+    
 	<?php do_action( 'before' ); ?>
 	<div id="content" class="site-content">
 		<div class="container">
