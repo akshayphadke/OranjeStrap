@@ -22,18 +22,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-
-	<div class="container">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-	</div>
 
 	<!-- Navigation bar -->
-    <div class="navbar navbar-default navbar-static-top">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-	        <!-- <div class="navbar-header">
-	          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-	        </div> -->
+	        <div class="navbar-header">
+	          <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a> -->
+	          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">AKSHAY PHADKE&nbsp;&nbsp;&nbsp;|</a>
+	        </div>
 	        <div class="navbar-collapse collapse">
 				<?php 
 					wp_nav_menu( array( 
@@ -48,6 +44,10 @@
       	</div>
     </div>
     <!-- End Navigation -->
+	
+<div id="page" class="hfeed site">
+
+
     
 	<?php do_action( 'before' ); ?>
 	<div id="content" class="site-content">
