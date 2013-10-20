@@ -11,17 +11,6 @@
 		<div class="entry-meta">
 			<?php OranjeStrap_posted_on(); ?>
 		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'OranjeStrap' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
 		<?php
@@ -42,9 +31,9 @@
 			} else {
 				// But this blog has loads of categories so we should probably display them here
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'OranjeStrap' );
+					$meta_text = __( 'Categories: %1$s<br/>Tags: %2$s.<br/> Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'OranjeStrap' );
 				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'OranjeStrap' );
+					$meta_text = __( 'Categories: %1$s.<br/> Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'OranjeStrap' );
 				}
 
 			} // end check for categories on this blog
@@ -57,6 +46,18 @@
 			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', 'OranjeStrap' ), '<span class="edit-link">', '</span>' ); ?>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'OranjeStrap' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+
+	<?php edit_post_link( __( 'Edit', 'OranjeStrap' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

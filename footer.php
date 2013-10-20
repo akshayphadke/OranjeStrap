@@ -9,7 +9,6 @@
 ?>
 		</div> <!-- row -->
 
-		<hr/>
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
 				<?php do_action( 'OranjeStrap_credits' ); ?>
