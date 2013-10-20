@@ -1,0 +1,125 @@
+@import "../libs/bootstrap/less/variables.less";
+@import "variables-oranje.less";
+
+a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+/* Override bootstrap css styles */
+code {
+  white-space: normal;
+}
+
+.col-lg-8 {
+  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.27);
+}
+
+.col-lg-4 {
+  margin-left: 20px;
+  width: 31.33%;
+  background-color: rgba(83, 83, 83, 0.25);
+}
+
+.navbar > .container .navbar-brand {
+  margin-left: -25px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 17px;
+}
+
+/* Override wp css styles */
+#page {
+  margin-top: 70px;
+}
+
+.post {
+  padding-top: 5px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #3C3C3C;
+  margin-bottom: 5px;
+}
+
+h1.entry-title,
+.page-header {
+  margin-top: 10px;
+}
+
+.widget_search {
+  margin-top: 10px;
+}
+
+.widget_search .search-submit {
+  display: inline;
+}
+
+h1.widget-title {
+  color: @brand-primary;
+  font-size: 24px;
+}
+
+.widget ul {
+  list-style: none;
+  margin: 10px;
+}
+
+.widget li {
+  border-bottom: 1px solid #3C3C3C;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.cat-links a, .tags-links a, .widget li a {
+  color: @link-blue;
+
+  &:hover,
+  &:focus {
+    color: @link-blue-darken;
+  }
+
+  &:visited {
+    color: @link-blue;
+  }
+}
+
+.entry-date,
+.vcard a {
+  color: @link-yellow;
+
+  &:hover,
+  &:focus {
+    color: @link-yellow-darken;
+  }
+
+  &:visited {
+    color: @link-yellow;
+  }
+}
+
+/* custom styles */
+/*.searchFormWrapper {
+	padding: 10px 10px 5px 10px;
+	background-color: #DD4814;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}*/
+
+.logoWrapper {
+  margin: 15px auto;
+  width: 200px;
+}
+.topLogo {
+  letter-spacing: 0.1em;
+  font-size: 28px;
+}

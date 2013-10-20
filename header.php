@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package OranjeStrap
+ * @package apT
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -16,23 +16,41 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<link rel="stylesheet" id="apt-style-css" href="http://127.0.0.1:8080/wordpress/wp-content/themes/OranjeStrap/libs/bootstrap/css/bootstrap.css?ver=3.0" type="text/css" media="all">
+<link rel="stylesheet" id="apt-style-css" href="http://127.0.0.1:8080/wordpress/wp-content/themes/OranjeStrap/css/custom.css?ver=1.0" type="text/css" media="all">
 </head>
 
 <body <?php body_class(); ?>>
+
+	<!-- Navigation bar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+	        <div class="navbar-header">
+	          <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a> -->
+	          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">AKSHAY PHADKE&nbsp;&nbsp;&nbsp;|</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+				<?php 
+					wp_nav_menu( array( 
+						'theme_location' => 'primary',
+						'container' => false,
+						'menu_class' => 'nav navbar-nav'
+
+						) 
+					); 
+				?>
+	        </div><!--/.nav-collapse -->
+      	</div>
+    </div>
+    <!-- End Navigation -->
+
 <div id="page" class="hfeed site">
+
+
+    
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'OranjeStrap' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'OranjeStrap' ); ?></a>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
 	<div id="content" class="site-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">

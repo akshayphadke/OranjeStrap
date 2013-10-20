@@ -1,0 +1,112 @@
+@import url("//fonts.googleapis.com/css?family=Ubuntu");
+a:hover {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+/* Override bootstrap css styles */
+code {
+  white-space: normal;
+}
+.col-lg-8 {
+  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.27);
+}
+.col-lg-4 {
+  margin-left: 20px;
+  width: 31.33%;
+  background-color: rgba(83, 83, 83, 0.25);
+}
+.navbar > .container .navbar-brand {
+  margin-left: -25px;
+}
+.navbar-nav > li > a {
+  padding-top: 17px;
+}
+/* Override wp css styles */
+#page {
+  margin-top: 70px;
+}
+.post {
+  padding-top: 5px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #3C3C3C;
+  margin-bottom: 5px;
+}
+h1.entry-title,
+.page-header {
+  margin-top: 10px;
+}
+.widget_search {
+  margin-top: 10px;
+}
+.widget_search .search-submit {
+  display: inline;
+}
+h1.widget-title {
+  color: #d15334;
+  font-size: 24px;
+}
+.widget ul {
+  list-style: none;
+  margin: 10px;
+}
+.widget li {
+  border-bottom: 1px solid #3C3C3C;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+.cat-links a,
+.tags-links a,
+.widget li a {
+  color: #449bb6;
+}
+.cat-links a:hover,
+.tags-links a:hover,
+.widget li a:hover,
+.cat-links a:focus,
+.tags-links a:focus,
+.widget li a:focus {
+  color: #2f6c7e;
+}
+.cat-links a:visited,
+.tags-links a:visited,
+.widget li a:visited {
+  color: #449bb6;
+}
+.entry-date,
+.vcard a {
+  color: #a5b14c;
+}
+.entry-date:hover,
+.vcard a:hover,
+.entry-date:focus,
+.vcard a:focus {
+  color: #737b35;
+}
+.entry-date:visited,
+.vcard a:visited {
+  color: #a5b14c;
+}
+/* custom styles */
+/*.searchFormWrapper {
+	padding: 10px 10px 5px 10px;
+	background-color: #DD4814;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}*/
+.logoWrapper {
+  margin: 15px auto;
+  width: 200px;
+}
+.topLogo {
+  letter-spacing: 0.1em;
+  font-size: 28px;
+}

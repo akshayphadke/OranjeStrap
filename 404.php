@@ -22,7 +22,7 @@ get_header(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( OranjeStrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<!-- <?php if ( OranjeStrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
 						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'OranjeStrap' ); ?></h2>
 						<ul>
@@ -36,8 +36,8 @@ get_header(); ?>
 							) );
 						?>
 						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
+					</div>< --> <!-- .widget -->
+					<!-- <?php endif; ?> -->
 
 					<?php
 					/* translators: %1$s: smiley */
@@ -52,5 +52,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
