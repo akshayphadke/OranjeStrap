@@ -18,7 +18,7 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #333745;
+@brand-primary:         #D15334;
 @brand-success:         #38B44A;
 @brand-warning:         #EFB73E;
 @brand-danger:          #DF382C;
@@ -33,8 +33,12 @@
 // Links
 // -------------------------
 
-@link-color:            #D15334;
+@link-color:            @brand-primary;
 @link-hover-color:      darken(@link-color, 15%);
+@link-blue: 			#449BB6;
+@link-blue-darken:		darken(@link-blue, 15%);
+@link-yellow:			#A5B14C;
+@link-yellow-darken:	darken(#A5B14C, 15%);
 
 // Typography
 // -------------------------
@@ -239,7 +243,7 @@
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-default-color:             #fff;
-@navbar-default-bg:                #D15334;
+@navbar-default-bg:                @brand-primary;
 @navbar-default-border:            #ccc;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
