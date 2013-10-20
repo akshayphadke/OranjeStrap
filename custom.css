@@ -49,8 +49,8 @@ h1.entry-title, .page-header {
 	margin-top: 10px;
 }
 
-.search-field {
-	width: 170%;
+.widget_search .search-submit {
+	display: inline;
 }
 
 h1.widget-title {
@@ -69,11 +69,23 @@ h1.widget-title {
 	margin-bottom: 10px;
 	padding-bottom: 5px;
 	padding-left: 10px;
-	color: #046380;
+	color: #449BB6;
 }
 
 .widget li a {
-	color: #046380;
+	color: #449BB6;
+}
+
+.cat-links a {
+	color: #449BB6;
+}
+
+.entry-date, .vcard a {
+	color: #A5B14C;
+}
+
+.tags-links a {
+	color: #449BB6;
 }
 
 /* custom styles */
