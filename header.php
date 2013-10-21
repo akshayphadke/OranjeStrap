@@ -17,12 +17,11 @@
 
 <?php wp_head(); ?>
 
-<link rel="stylesheet" id="apt-style-css" href="<?php curPageURL() ?>wp-content/themes/OranjeStrap/libs/bootstrap/css/bootstrap.css?ver=3.0" type="text/css" media="all">
-<link rel="stylesheet" id="apt-style-css" href="<?php curPageURL() ?>wp-content/themes/OranjeStrap/css/custom.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="apt-style-css" href="<?php echo get_bloginfo( 'wpurl') ?>/wp-content/themes/OranjeStrap/libs/bootstrap/css/bootstrap.css?ver=3.0" type="text/css" media="all">
+<link rel="stylesheet" id="apt-style-css" href="<?php echo get_bloginfo( 'wpurl') ?>/wp-content/themes/OranjeStrap/css/custom.css?ver=1.0" type="text/css" media="all">
 </head>
 
 <body <?php body_class(); ?>>
-
 	<!-- Navigation bar -->
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
