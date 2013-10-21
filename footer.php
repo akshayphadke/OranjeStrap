@@ -22,6 +22,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+<script src="<?php echo get_bloginfo( 'wpurl') ?>/wp-content/themes/OranjeStrap/libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

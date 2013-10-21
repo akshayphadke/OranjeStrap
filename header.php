@@ -16,7 +16,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-
 <link rel="stylesheet" id="apt-style-css" href="<?php echo get_bloginfo( 'wpurl') ?>/wp-content/themes/OranjeStrap/libs/bootstrap/css/bootstrap.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="apt-style-css" href="<?php echo get_bloginfo( 'wpurl') ?>/wp-content/themes/OranjeStrap/css/custom.css?ver=1.0" type="text/css" media="all">
 </head>
@@ -26,8 +25,12 @@
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
 	        <div class="navbar-header">
-	          <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a> -->
-	          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">AKSHAY PHADKE&nbsp;&nbsp;&nbsp;|</a>
+            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        		<span class="icon-bar"></span>
+	            	<span class="icon-bar"></span>
+	            	<span class="icon-bar"></span>
+         		</button>
+	            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">AKSHAY PHADKE&nbsp;&nbsp;&nbsp;|</a>
 	        </div>
 	        <div class="navbar-collapse collapse">
 				<?php 
