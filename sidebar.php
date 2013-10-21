@@ -6,7 +6,7 @@
  */
 ?>
 </div> <!-- col-lg-8 -->
-<div class="col-lg-4">
+<div class="col-lg-4 visible-lg">
 	<div id="secondary" class="widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
