@@ -1,4 +1,7 @@
 @import url("//fonts.googleapis.com/css?family=Ubuntu");
+body {
+  background-color: #F1F0ED;
+}
 a:hover {
   text-decoration: none;
 }
@@ -42,6 +45,9 @@ h1.entry-title,
   margin-bottom: 20px;
   color: #e96b56;
   font-size: 30px;
+}
+h1.entry-title a {
+  color: #E96B56;
 }
 .widget_search {
   margin-top: 10px;
@@ -130,7 +136,9 @@ h1.widget-title {
   color: #3fbd49;
 }
 .site-footer {
-  margin: 20px 0px 10px;
+  margin: 20px -15px 10px -15px;
+  background-color: #F5F5F5;
+  padding: 10px 15px 10px;
 }
 .logoWrapper {
   margin: 15px auto;
