@@ -14,15 +14,14 @@ code {
 }
 .col-lg-8 {
   padding-right: 30px;
-  background-color: rgba(0, 0, 0, 0.27);
 }
 .col-lg-4 {
   margin-left: 20px;
   width: 31.33%;
-  background-color: rgba(83, 83, 83, 0.25);
-}
-.navbar > .container .navbar-brand {
-  margin-left: -25px;
+  background-color: #F5F5F5;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 .navbar-nav > li > a {
   padding-top: 17px;
@@ -34,13 +33,15 @@ code {
 .post {
   padding-top: 5px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #3C3C3C;
+  border-bottom: 1px solid #E7E7E7;
   margin-bottom: 5px;
 }
 h1.entry-title,
 .page-header {
   margin-top: 10px;
-  color: #d15334;
+  margin-bottom: 20px;
+  color: #e96b56;
+  font-size: 30px;
 }
 .widget_search {
   margin-top: 10px;
@@ -49,7 +50,7 @@ h1.entry-title,
   display: inline;
 }
 h1.widget-title {
-  color: #d15334;
+  color: #e96b56;
   font-size: 24px;
 }
 .widget ul {
@@ -57,11 +58,9 @@ h1.widget-title {
   margin: 10px;
 }
 .widget li {
-  border-bottom: 1px solid #3C3C3C;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 5px;
-  padding-left: 10px;
 }
 .entry-meta a,
 .widget li a {
@@ -77,31 +76,62 @@ h1.widget-title {
 .widget li a:visited {
   color: #449bb6;
 }
+.tags-links {
+  font-size: 12px;
+  margin-left: 40px;
+}
+.tags-links a {
+  color: #3fbd49;
+  font-size: 12px;
+  font-family: "Verdana";
+}
+.tags-links a:hover,
+.tags-links a:focus {
+  color: #2c8433;
+}
+.tags-links a:visited {
+  color: #3fbd49;
+}
+.entry-meta-custom {
+  font-size: 12px;
+}
+.entry-meta-custom .tags {
+  margin-left: 40px;
+}
+.entry-meta-custom .tags a {
+  color: #3fbd49;
+  font-size: 12px;
+  font-family: "Verdana";
+}
+.entry-meta-custom .tags a:hover,
+.entry-meta-custom .tags a:focus {
+  color: #2c8433;
+}
+.entry-meta-custom .tags a:visited {
+  color: #3fbd49;
+}
+.entry-meta .byline {
+  font-size: 12px;
+}
 .entry-date,
 .vcard a {
-  color: #a5b14c;
+  color: #3fbd49;
+  font-size: 12px;
+  font-family: "Verdana";
 }
 .entry-date:hover,
 .vcard a:hover,
 .entry-date:focus,
 .vcard a:focus {
-  color: #737b35;
+  color: #2c8433;
 }
 .entry-date:visited,
 .vcard a:visited {
-  color: #a5b14c;
+  color: #3fbd49;
 }
 .site-footer {
-  margin: 20px -15px 10px;
+  margin: 20px 0px 10px;
 }
-/* custom styles */
-/*.searchFormWrapper {
-	padding: 10px 10px 5px 10px;
-	background-color: #DD4814;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-}*/
 .logoWrapper {
   margin: 15px auto;
   width: 200px;
@@ -109,4 +139,7 @@ h1.widget-title {
 .topLogo {
   letter-spacing: 0.1em;
   font-size: 28px;
+}
+.tags-links {
+  margin-left: 10%;
 }

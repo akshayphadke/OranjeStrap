@@ -13,7 +13,7 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #D15334;
+@brand-primary:         #E96B56;
 @brand-success:         #38B44A;
 @brand-warning:         #EFB73E;
 @brand-danger:          #DF382C;
@@ -23,7 +23,7 @@
 // -------------------------
 
 @body-bg:               #fff;
-@text-color:            #B3B3B3;
+@text-color:            #525252;
 
 // Links
 // -------------------------
@@ -32,8 +32,8 @@
 @link-hover-color:      darken(@link-color, 15%);
 @link-blue: 			#449BB6;
 @link-blue-darken:		darken(@link-blue, 15%);
-@link-yellow:			#A5B14C;
-@link-yellow-darken:	darken(#A5B14C, 15%);
+@link-green:			#3FBD49;
+@link-green-darken:		darken(@link-green, 15%);
 
 // Typography
 // -------------------------
@@ -238,7 +238,7 @@
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-default-color:             #fff;
-@navbar-default-bg:                @brand-primary;
+@navbar-default-bg:                @text-color;
 @navbar-default-border:            #ccc;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
@@ -247,7 +247,7 @@
 // Navbar links
 @navbar-default-link-color:                #fff;
 @navbar-default-link-hover-color:          #fff;
-@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 15%);
+@navbar-default-link-hover-bg:             @brand-primary;
 @navbar-default-link-active-color:         #fff;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
 @navbar-default-link-disabled-color:       #ccc;

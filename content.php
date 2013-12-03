@@ -12,7 +12,17 @@
 		<span class="entry-meta">
 			<?php OranjeStrap_posted_on(); ?>
 		</span><!-- .entry-meta -->
+					<?php
+				/* translators: used between list items, there is a space after the comma */
+				$tags_list = get_the_tag_list( '', __( ', ', 'OranjeStrap' ) );
+				if ( $tags_list ) :
+			?>
+			<span class="tags-links">
+				<?php printf( __( 'Tags: %1$s', 'OranjeStrap' ), $tags_list ); ?>
+			</span>
+			<?php endif; // End if $tags_list ?>
 		<?php endif; ?>
+
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
@@ -43,15 +53,7 @@
 			</div> -->
 			<?php endif; // End if categories ?>
 			
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( '  | ', 'OranjeStrap' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="tags-links">
-				<?php printf( __( 'Tags: %1$s', 'OranjeStrap' ), $tags_list ); ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
+
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 		<?php edit_post_link( __( 'Edit', 'OranjeStrap' ), '<span class="edit-link">', '</span>' ); ?>
