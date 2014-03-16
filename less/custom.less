@@ -25,40 +25,42 @@ code {
   white-space: normal;
 }
 
+.navbar-brand {
+  padding-top: 10px;
+}
+
 .col-lg-8 {
   padding-right: 30px;
 }
 
 .col-lg-4 {
-  margin-left: 20px;
   width: 31.33%;
-  background-color: #F5F5F5;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+  background-color: #5E8A94;
 }
 
 .navbar-nav > li > a {
-  padding-top: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Override wp css styles */
 #page {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .post {
-  padding-top: 5px;
+  padding: 5px 20px 15px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #E7E7E7;
-  margin-bottom: 5px;
+  border: 1px solid #E7E7E7;
+  margin-bottom: 15px;
+  background-color: #FFF;
 }
 
 h1.entry-title, .page-header {
   margin-top: 10px;
   margin-bottom: 20px;
   color: @brand-primary;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 h1.entry-title {
@@ -76,7 +78,7 @@ h1.entry-title {
 }
 
 h1.widget-title {
-  color: @brand-primary;
+  color: #FFF;
   font-size: 24px;
 }
 
@@ -92,15 +94,28 @@ h1.widget-title {
 }
 
 .entry-meta a, .widget li a {
-  color: @link-blue;
+  color: @link-yellow;
 
   &:hover,
   &:focus {
-    color: @link-blue-darken;
+    color: @link-yellow-darken;
   }
 
   &:visited {
-    color: @link-blue;
+    color: @link-yellow;
+  }
+}
+
+#tag_cloud-2 a {
+  color: @link-yellow;
+
+  &:hover,
+  &:focus {
+    color: @link-yellow-darken;
+  }
+
+  &:visited {
+    color: @link-yellow;
   }
 }
 
