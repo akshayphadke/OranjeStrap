@@ -83,6 +83,16 @@ h1.widget-title {
 .widget li a:visited {
   color: #f5efd5;
 }
+.entry-meta a {
+  color: #449bb6;
+}
+.entry-meta a:hover,
+.entry-meta a:focus {
+  color: #2f6c7e;
+}
+.entry-meta a:visited {
+  color: #449bb6;
+}
 #tag_cloud-2 a {
   color: #f5efd5;
 }
